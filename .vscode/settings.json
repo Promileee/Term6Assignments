@@ -1,15 +1,4 @@
 {
     "python-envs.defaultEnvManager": "ms-python.python:conda",
-    "python-envs.defaultPackageManager": "ms-python.python:conda",
-
-    // 1. 核心：指定该项目/全局默认使用的 Python 路径
-    // 如果是 Windows，路径通常如下；如果是 Mac/Linux，请替换为 /anaconda3/envs/jupyter_env/bin/python
-    "python.defaultInterpreterPath": "jupyter_env", 
-
-    // 2. 确保终端启动时自动运行激活脚本
-    "python.terminal.activateEnvInCurrentTerminal": true,
-
-    // 3. 针对 Jupyter Notebook 的内核锁定
-    "jupyter.askForKernelRestart": false,
-    "notebook.defaultCellLanguage": "python"
+    "python-envs.defaultPackageManager": "ms-python.python:conda"
 }
