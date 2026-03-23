@@ -1,0 +1,6 @@
+Data_Type,Model,Sub_Pop,Weight (ω),Shape (β),Scale (η)
+Time_Days,n=2,Sub_Cluster_1,0.9884,1.2340,146.6215
+Time_Days,n=2,Sub_Cluster_2,0.0116,3.9444,1053.1810
+Time_Days,n=3,Sub_Cluster_1,0.9910,1.2185,149.1800
+Time_Days,n=3,Sub_Cluster_2,0.0001,12.2673,483.7863
+Time_Days,n=3,Sub_Cluster_3,0.0089,7.2649,1088.9887

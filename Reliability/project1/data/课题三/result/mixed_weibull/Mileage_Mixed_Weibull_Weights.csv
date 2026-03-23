@@ -1,0 +1,6 @@
+Data_Type,Model,Sub_Pop,Weight (ω),Shape (β),Scale (η)
+Mileage_km,n=2,Sub_Cluster_1,0.9986,0.9349,20154.0264
+Mileage_km,n=2,Sub_Cluster_2,0.0014,1.3605,594556.3183
+Mileage_km,n=3,Sub_Cluster_1,0.9976,0.9419,19989.2881
+Mileage_km,n=3,Sub_Cluster_2,0.0022,5.1614,234466.0756
+Mileage_km,n=3,Sub_Cluster_3,0.0002,10.7142,616598.3230

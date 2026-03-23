@@ -1,0 +1,5 @@
+Copula,Margin System,Theta Parameter,NLL,AIC,Theta (Rho)
+Frank,Parametric Baseline (Time:Gamma-2 | Mileage:Weibull-2),7.905937873878307,-2324.339576538184,-4646.679153076368,
+Gaussian,Parametric Baseline (Time:Gamma-2 | Mileage:Weibull-2),,-1700.7468648775775,-3399.493729755155,0.6963847029771456
+Gumbel,Parametric Baseline (Time:Gamma-2 | Mileage:Weibull-2),1.6322540272981079,-1696.6962699805476,-3391.3925399610953,
+Clayton,Parametric Baseline (Time:Gamma-2 | Mileage:Weibull-2),1.492455956586997,-1402.0330081901352,-2802.0660163802704,

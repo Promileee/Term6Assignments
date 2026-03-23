@@ -1,0 +1,25 @@
+Distribution,Method,Parameters
+Exponential,MLE,145.9778
+Exponential,LSM,153.4644
+Exponential,MOM,145.9778
+Normal,MLE,"145.9778, 143.1687"
+Normal,LSM,"120.1606, 99.9575"
+Normal,MOM,"145.9778, 143.1687"
+TruncNormal,MLE,"-3543.5759, 747.5143"
+TruncNormal,LSM,"-96.8836, 210.1621"
+TruncNormal,MOM,"-3542.8978, 751.9636"
+LogNormal,MLE,"1.0283, 94.8360"
+LogNormal,LSM,"0.9674, 103.1440"
+LogNormal,MOM,"0.8210, 104.2148"
+Weibull_2P,MLE,"1.1336, 153.1747"
+Weibull_2P,LSM,"1.1876, 148.7794"
+Weibull_2P,MOM,"1.0196, 147.1501"
+Weibull_3P,MLE,"1.1159, 0.9441, 151.3180"
+Weibull_3P,LSM,"1.1184, 5.2524, 142.8382"
+Weibull_3P,MOM,"0.7510, 39.9915, 89.1095"
+Gamma_2P,MLE,"1.3007, 112.2315"
+Gamma_2P,LSM,"1.3240, 107.4008"
+Gamma_2P,MOM,"1.0394, 140.4408"
+Gamma_3P,MLE,"1.2613, 0.8116, 115.0902"
+Gamma_3P,LSM,"1.2413, 3.3447, 112.6463"
+Gamma_3P,MOM,"0.4123, 54.0409, 222.9928"
