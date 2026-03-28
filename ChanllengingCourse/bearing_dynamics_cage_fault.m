@@ -34,7 +34,7 @@ param.T = 10000.0;                  % 仿真时长 (s) (建议加长一点看低
 
 % --- 4. 故障参数设置 ---
 % 故障类型: 0=正常, 1=外圈(OF), 2=内圈(IF), 3=滚动体(BF), 4=保持架断裂(Cage)
-param.fault_type = 3; 
+param.fault_type = 4; 
 
 param.defect_width = 3.6e-4;   % 用于类型 1-3
 param.defect_depth = 1e-3;     % 用于类型 1-3
