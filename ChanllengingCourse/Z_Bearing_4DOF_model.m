@@ -29,7 +29,7 @@ param.T = 1;                  % 仿真时长 (s)
 
 % --- 4. 故障参数设置 ---
 % 故障类型: 0=正常, 1=外圈故障(OF), 2=内圈故障(IF), 3=滚动体故障(BF)
-param.fault_type = 3; %故障类型        
+param.fault_type = 0; %故障类型        
 param.defect_width = 3.6e-4;      % 故障宽度 (m)
 param.defect_depth = 1e-3;    % 故障深度 (m)
 
