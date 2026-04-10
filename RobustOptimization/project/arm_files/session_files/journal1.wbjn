@@ -1,0 +1,103 @@
+# encoding: utf-8
+# 2024 R1
+SetScriptVersion(Version="24.1.144")
+template1 = GetTemplate(
+    TemplateName="Static Structural",
+    Solver="ANSYS")
+system1 = template1.CreateSystem()
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(FilePath="C:/Users/20230/Desktop/Assignment/RobustOptimization/project/arm.x_t")
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Refresh()
+setupComponent1 = system1.GetComponent(Name="Setup")
+setupComponent1.Refresh()
+setup1 = system1.GetContainer(ComponentName="Setup")
+setup1.Edit()
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Exit()
+model1.Edit()
+model1.Edit()
+model1.Exit()
+favorites1 = EngData.LoadFavoriteItems()
+EngData.EnableFilter(Enable=False)
+EngData.EnableFilter()
+library1 = EngData.OpenLibrary(
+    Name="General Materials",
+    Source="General_Materials.xml")
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+matl1 = engineeringData1.CreateMaterial(Name="ABS")
+matlProp1 = matl1.CreateProperty(
+    Name="Density",
+    Qualifiers={"Definition": "", "Behavior": ""})
+matlProp1.SetData(
+    Index=-1,
+    Variables=["Density"],
+    Values=[["1050 [kg m^-3]"]])
+matlProp2 = matl1.CreateProperty(
+    Name="Elasticity",
+    Behavior="Isotropic",
+    Qualifiers={"Definition": "", "Behavior": "Isotropic"})
+matl1.Delete()
+matl2 = engineeringData1.ImportMaterial(
+    Name="Polyethylene",
+    Source="General_Materials.xml")
+EngData.EnableFilter(Enable=False)
+EngData.EnableFilter()
+material1 = engineeringData1.GetMaterial(Name="结构钢")
+material1.Delete()
+library2 = EngData.OpenLibrary(
+    Name="Additive Manufacturing Materials",
+    Source="Additive_Manufacturing_Materials.xml")
+library3 = EngData.OpenLibrary(
+    Name="ANSYS GRANTA Materials Data for Simulation (Sample)",
+    Source="Granta_Design_Typical_Materials.xml")
+library4 = EngData.OpenLibrary(
+    Name="Thermal Materials",
+    Source="Thermal_Materials.xml")
+modelComponent1.Refresh()
+model1.Edit()
+model1.Exit()
+model1.Edit()
+model1.Exit()
+model1.Edit()
+model1.Edit()
+template2 = GetTemplate(
+    TemplateName="Modal",
+    Solver="ANSYS")
+system2 = template2.CreateSystem()
+system2.Move(
+    Position="Right",
+    RelativeTo=system1)
+resultsComponent1 = system2.GetComponent(Name="Results")
+RemoveComponentFromProject(
+    Component=resultsComponent1,
+    System=system2)
+solutionComponent1 = system2.GetComponent(Name="Solution")
+RemoveComponentFromProject(
+    Component=solutionComponent1,
+    System=system2)
+system2.Delete()
+engineeringDataComponent1 = system1.GetComponent(Name="Engineering Data")
+geometryComponent1 = system1.GetComponent(Name="Geometry")
+system3 = template2.CreateSystem(
+    ComponentsToShare=[engineeringDataComponent1, geometryComponent1, modelComponent1],
+    Position="Right",
+    RelativeTo=system1)
+setup2 = system3.GetContainer(ComponentName="Setup")
+setup2.Edit()
+model1.Exit()
+results1 = system1.GetContainer(ComponentName="Results")
+results1.Edit()
+system4 = template2.CreateSystem(
+    ComponentsToShare=[engineeringDataComponent1, geometryComponent1, modelComponent1],
+    Position="Right",
+    RelativeTo=system1)
+system5 = template2.CreateSystem(
+    ComponentsToShare=[engineeringDataComponent1, geometryComponent1, modelComponent1],
+    Position="Right",
+    RelativeTo=system1)
+system5 = template2.CreateSystem(
+    ComponentsToShare=[engineeringDataComponent1, geometryComponent1, modelComponent1],
+    Position="Right",
+    RelativeTo=system1)
+Save(Overwrite=True)

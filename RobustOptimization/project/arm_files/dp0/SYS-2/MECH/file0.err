@@ -1,0 +1,32 @@
+/COM,ANSYS RELEASE 2024 R1           BUILD 24.1      UP20231106       22:07:11
+
+ *** WARNING ***                         CP =       0.219   TIME= 22:07:12
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =       0.219   TIME= 22:07:12
+ No constraints have been defined using the D command.                   
+
+ *** ERROR ***                           CP =       0.344   TIME= 22:07:12
+ Resources file 'D:\ANSYS Inc\v241\CommonFiles\Language\/fx0.msb' not    
+ found.  CADOE_LIBDIR241 = D:\ANSYS Inc\v241\CommonFiles\Language\       
+
+ *** ERROR ***                           CP =       0.547   TIME= 22:07:12
+ Resources file 'D:\ANSYS Inc\v241\CommonFiles\Language\/fx0.msb' not    
+ found.  CADOE_LIBDIR241 = D:\ANSYS Inc\v241\CommonFiles\Language\       
+
+ *** ERROR ***                           CP =       0.547   TIME= 22:07:12
+ Resources file 'D:\ANSYS Inc\v241\CommonFiles\Language\/fx0.msb' not    
+ found.  CADOE_LIBDIR241 = D:\ANSYS Inc\v241\CommonFiles\Language\       
+
+ *** ERROR ***                           CP =       0.547   TIME= 22:07:12
+ Resources file 'D:\ANSYS Inc\v241\CommonFiles\Language\/fx0.msb' not    
+ found.  CADOE_LIBDIR241 = D:\ANSYS Inc\v241\CommonFiles\Language\       
+
+ *** WARNING ***                         CP =       0.688   TIME= 22:07:12
+ The eigenproblem is ill-conditioned (relative residual from test linear 
+ solve: 2.738162E-03).  The accuracy of the solution may not be          
+ satisfactory.  Modifying the initial value of the frequency shift       
+ (FREQB in the MODOPT command) or changing the boundary conditions of    
+ the model might solve the problem.                                      
+                                                                         

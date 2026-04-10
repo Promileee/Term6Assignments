@@ -1,0 +1,551 @@
+
+ Ansys Mechanical Enterprise                       
+
+
+ *------------------------------------------------------------------*
+ |                                                                  |
+ |   W E L C O M E   T O   T H E   A N S Y S (R)  P R O G R A M     |
+ |                                                                  |
+ *------------------------------------------------------------------*
+
+
+
+
+ ***************************************************************
+ *         ANSYS MAPDL 2024 R1          LEGAL NOTICES          *
+ ***************************************************************
+ *                                                             *
+ * Copyright 1971-2024 Ansys, Inc.  All rights reserved.       *
+ * Unauthorized use, distribution or duplication is            *
+ * prohibited.                                                 *
+ *                                                             *
+ * Ansys is a registered trademark of Ansys, Inc. or its       *
+ * subsidiaries in the United States or other countries.       *
+ * See the Ansys, Inc. online documentation or the Ansys, Inc. *
+ * documentation CD or online help for the complete Legal      *
+ * Notice.                                                     *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * THIS ANSYS SOFTWARE PRODUCT AND PROGRAM DOCUMENTATION       *
+ * INCLUDE TRADE SECRETS AND CONFIDENTIAL AND PROPRIETARY      *
+ * PRODUCTS OF ANSYS, INC., ITS SUBSIDIARIES, OR LICENSORS.    *
+ * The software products and documentation are furnished by    *
+ * Ansys, Inc. or its subsidiaries under a software license    *
+ * agreement that contains provisions concerning               *
+ * non-disclosure, copying, length and nature of use,          *
+ * compliance with exporting laws, warranties, disclaimers,    *
+ * limitations of liability, and remedies, and other           *
+ * provisions.  The software products and documentation may be *
+ * used, disclosed, transferred, or copied only in accordance  *
+ * with the terms and conditions of that software license      *
+ * agreement.                                                  *
+ *                                                             *
+ * Ansys, Inc. is a UL registered                              *
+ * ISO 9001:2015 company.                                      *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * This product is subject to U.S. laws governing export and   *
+ * re-export.                                                  *
+ *                                                             *
+ * For U.S. Government users, except as specifically granted   *
+ * by the Ansys, Inc. software license agreement, the use,     *
+ * duplication, or disclosure by the United States Government  *
+ * is subject to restrictions stated in the Ansys, Inc.        *
+ * software license agreement and FAR 12.212 (for non-DOD      *
+ * licenses).                                                  *
+ *                                                             *
+ ***************************************************************
+
+ 2024 R1 
+     
+ Point Releases and Patches installed:   
+     
+ Ansys, Inc. License Manager 2024 R1 
+ Viewer 2024 R1  
+ Discovery 2024 R1   
+ SpaceClaim 2024 R1  
+ Icepak (includes CFD-Post) 2024 R1  
+ Fluids 2024 R1  
+ Ansys Dynamic Reporting 2024 R1 
+ CFD-Post only 2024 R1   
+ CFX (includes CFD-Post) 2024 R1 
+ Chemkin 2024 R1 
+ EnSight 2024 R1 
+ FENSAP-ICE 2024 R1  
+ Fluent (includes CFD-Post) 2024 R1  
+ Polyflow (includes CFD-Post) 2024 R1
+ Forte (includes EnSight) 2024 R1
+ ICEM CFD 2024 R1
+ TurboGrid 2024 R1   
+ ACIS Geometry Interface 2024 R1 
+ AutoCAD Geometry Interface 2024 R1  
+ Catia, Version 4 Geometry Interface 2024 R1 
+ Catia, Version 5 Geometry Interface 2024 R1 
+ Catia, Version 6 Geometry Interface 2024 R1 
+ Creo Elements/Direct Modeling Geometry Interface 2024 R1
+ Creo Parametric Geometry Interface 2024 R1  
+ Inventor Geometry Interface 2024 R1 
+ JTOpen Geometry Interface 2024 R1   
+ NX Geometry Interface 2024 R1   
+ Parasolid Geometry Interface  2024 R1   
+ Solid Edge Geometry Interface 2024 R1   
+ SOLIDWORKS Geometry Interface 2024 R1   
+ Speos 2024 R1   
+ Speos HPC 2024 R1   
+ optiSLang 2024 R1   
+ Remote Solve Manager Standalone Services 2024 R1
+ Additive 2024 R1
+ Aqwa 2024 R1
+ Autodyn 2024 R1 
+ Customization Files for User Programmable Features 2024 R1  
+ LS-DYNA 2024 R1 
+ Material Calibration App 2024 R1
+ Mechanical Products 2024 R1 
+ Motion 2024 R1  
+ Sherlock 2024 R1
+ Sound - SAS 2024 R1 
+
+
+          *****  MAPDL COMMAND LINE ARGUMENTS  *****
+  BATCH MODE REQUESTED (-b)    = NOLIST
+  INPUT FILE COPY MODE (-c)    = COPY
+  DISTRIBUTED MEMORY PARALLEL REQUESTED
+       4 PARALLEL PROCESSES REQUESTED WITH SINGLE THREAD PER PROCESS
+    TOTAL OF     4 CORES REQUESTED
+  INPUT FILE NAME              = C:\Users\20230\AppData\Local\Temp\WB_Lihua_2256_2\_ProjectScratch\ScrEEA0\dummy.dat
+  OUTPUT FILE NAME             = C:\Users\20230\AppData\Local\Temp\WB_Lihua_2256_2\_ProjectScratch\ScrEEA0\solve.out
+  START-UP FILE MODE           = NOREAD
+  STOP FILE MODE               = NOREAD
+
+ RELEASE= 2024 R1              BUILD= 24.1      UP20231106   VERSION=WINDOWS x64 
+ CURRENT JOBNAME=file0  22:07:11  APR 07, 2026 CP=      0.047
+
+
+ PARAMETER _DS_PROGRESS =     999.0000000    
+
+ /INPUT FILE= ds.dat  LINE=       0
+
+
+
+ *** NOTE ***                            CP =       0.125   TIME= 22:07:12
+ The /CONFIG,NOELDB command is not valid in a distributed memory         
+ parallel solution.  Command is ignored.                                 
+
+ *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE=  22.1200000    
+
+ TITLE= 
+ wbnew--__ (B5)                                                                
+
+  ACT Extensions:
+      LSDYNA, 2024.1
+      5f463412-bd3e-484b-87e7-cbc0a665e474, wbex
+ /COM,     ANSYSMotion, 2024.1
+      20180725-3f81-49eb-9f31-41364844c769, wbex
+  
+
+ SET PARAMETER DIMENSIONS ON  _WB_PROJECTSCRATCH_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_PROJECTSCRATCH_DIR(1) = C:\Users\20230\AppData\Local\Temp\WB_Lihua_2256_2\_ProjectScratch\ScrEEA0\
+
+ SET PARAMETER DIMENSIONS ON  _WB_SOLVERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_SOLVERFILES_DIR(1) = C:\Users\20230\AppData\Local\Temp\WB_Lihua_2256_2\wbnew_files\dp0\SYS-2\MECH\
+
+ SET PARAMETER DIMENSIONS ON  _WB_USERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_USERFILES_DIR(1) = C:\Users\20230\AppData\Local\Temp\WB_Lihua_2256_2\wbnew_files\user_files\
+ --- Data in consistent MKS units. See Solving Units in the help system for more
+
+ MKS UNITS SPECIFIED FOR INTERNAL    
+  LENGTH        (l)  = METER (M)
+  MASS          (M)  = KILOGRAM (KG)
+  TIME          (t)  = SECOND (SEC)
+  TEMPERATURE   (T)  = CELSIUS (C)
+  TOFFSET            = 273.0
+  CHARGE        (Q)  = COULOMB
+  FORCE         (f)  = NEWTON (N) (KG-M/SEC2)
+  HEAT               = JOULE (N-M)
+
+  PRESSURE           = PASCAL (NEWTON/M**2)
+  ENERGY        (W)  = JOULE (N-M)
+  POWER         (P)  = WATT (N-M/SEC)
+  CURRENT       (i)  = AMPERE (COULOMBS/SEC)
+  CAPACITANCE   (C)  = FARAD
+  INDUCTANCE    (L)  = HENRY
+  MAGNETIC FLUX      = WEBER
+  RESISTANCE    (R)  = OHM
+  ELECTRIC POTENTIAL = VOLT
+
+ INPUT  UNITS ARE ALSO SET TO MKS 
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise                       
+ 20230322  VERSION=WINDOWS x64   22:07:12  APR 07, 2026 CP=      0.141
+
+ wbnew--__ (B5)                                                                
+
+
+
+          ***** MAPDL ANALYSIS DEFINITION (PREP7) *****
+ *********** Nodes for the whole assembly ***********
+ *********** Elements for Body 1 "Part 1" ***********
+ *********** Send User Defined Coordinate System(s) ***********
+ *********** Set Reference Temperature ***********
+ *********** Send Materials ***********
+
+
+ ***** ROUTINE COMPLETED *****  CP =         0.188
+
+
+ --- Number of total nodes = 14240
+ --- Number of contact elements = 0
+ --- Number of spring elements = 0
+ --- Number of bearing elements = 0
+ --- Number of solid elements = 2020
+ --- Number of condensed parts = 0
+ --- Number of total elements = 2020
+
+ *GET  _WALLBSOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  22.1200000    
+
+ *****  MAPDL SOLUTION ROUTINE  *****
+
+
+ PERFORM A MODAL ANALYSIS
+  THIS WILL BE A NEW ANALYSIS
+
+ PARAMETER _THICKRATIO =     0.000000000    
+
+
+ USE SYM. BLOCK LANCZOS MODE EXTRACTION METHOD
+  EXTRACT     6 MODES
+  NORMALIZE THE MODE SHAPES TO THE MASS MATRIX
+
+ ERASE THE CURRENT DATABASE OUTPUT CONTROL TABLE.
+
+
+ WRITE ALL  ITEMS TO THE DATABASE WITH A FREQUENCY OF NONE
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE NSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+
+ EXPAND ALL EXTRACTED MODES
+  DO NOT CALCULATE ELEMENT RESULTS
+
+ DO NOT COMBINE ELEMENT SAVE DATA FILES (.esav) AFTER DISTRIBUTED PARALLEL SOLUTION
+
+ DO NOT COMBINE ELEMENT MATRIX FILES (.emat) AFTER DISTRIBUTED PARALLEL SOLUTION
+
+ DO NOT COMBINE ASSEMBLED MATRIX FILES (.full) AFTER DISTRIBUTED PARALLEL SOLUTION
+
+ *GET  ANSINTER_  FROM  ACTI  ITEM=INT        VALUE=  0.00000000    
+
+ *IF  ANSINTER_                         ( =   0.00000     )  NE  
+      0                                 ( =   0.00000     )  THEN    
+
+ *ENDIF
+
+ *** NOTE ***                            CP =       0.203   TIME= 22:07:12
+ The automatic domain decomposition logic has selected the MESH domain   
+ decomposition method with 4 processes per solution.                     
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       0.219   TIME= 22:07:12
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** NOTE ***                            CP =       0.219   TIME= 22:07:12
+ The model data was checked and warning messages were found.             
+  Please review output or errors file (                                  
+ C:\Users\20230\AppData\Local\Temp\WB_Lihua_2256_2\_ProjectScratch\ScrEE 
+ EA0\file0.err ) for these warning messages.                             
+
+ *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***
+      --- GIVE SUGGESTIONS AND RESET THE KEY OPTIONS ---
+
+ ELEMENT TYPE         1 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise                       
+ 20230322  VERSION=WINDOWS x64   22:07:12  APR 07, 2026 CP=      0.219
+
+ wbnew--__ (B5)                                                                
+
+
+
+                       S O L U T I O N   O P T I O N S
+
+   PROBLEM DIMENSIONALITY. . . . . . . . . . . . .3-D                  
+   DEGREES OF FREEDOM. . . . . . UX   UY   UZ  
+   ANALYSIS TYPE . . . . . . . . . . . . . . . . .MODAL                
+      EXTRACTION METHOD. . . . . . . . . . . . . .BLOCK LANCZOS
+   OFFSET TEMPERATURE FROM ABSOLUTE ZERO . . . . .  273.15    
+   NUMBER OF MODES TO EXTRACT. . . . . . . . . . .     6
+   GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  
+   NUMBER OF MODES TO EXPAND . . . . . . . . . . .ALL
+   ELEMENT RESULTS CALCULATION . . . . . . . . . .OFF
+
+ *** WARNING ***                         CP =       0.219   TIME= 22:07:12
+ No constraints have been defined using the D command.                   
+
+ *** NOTE ***                            CP =       0.219   TIME= 22:07:12
+ The step data was checked and warning messages were found.              
+  Please review output or errors file (                                  
+ C:\Users\20230\AppData\Local\Temp\WB_Lihua_2256_2\_ProjectScratch\ScrEE 
+ EA0\file0.err ) for these warning messages.                             
+
+ *** NOTE ***                            CP =       0.219   TIME= 22:07:12
+ The conditions for direct assembly have been met.  No .emat or .erot    
+ files will be produced.                                                 
+
+ *** NOTE ***                            CP =       0.219   TIME= 22:07:12
+ Material nonlinearities are ignored in a harmonic or modal analysis.    
+
+  
+  
+     D I S T R I B U T E D   D O M A I N   D E C O M P O S E R
+  
+  ...Number of elements: 2020
+  ...Number of nodes:    14240
+  ...Decompose to 4 CPU domains
+  ...Element load balance ratio =     1.000
+
+
+                      L O A D   S T E P   O P T I O N S
+
+   LOAD STEP NUMBER. . . . . . . . . . . . . . . .     1
+   THERMAL STRAINS INCLUDED IN THE LOAD VECTOR . .   YES
+   PRINT OUTPUT CONTROLS . . . . . . . . . . . . .NO PRINTOUT
+   DATABASE OUTPUT CONTROLS
+      ITEM     FREQUENCY   COMPONENT
+       ALL       NONE               
+      NSOL        ALL               
+
+
+
+                         ***********  PRECISE MASS SUMMARY  ***********
+
+   TOTAL RIGID BODY MASS MATRIX ABOUT ORIGIN
+               Translational mass               |   Coupled translational/rotational mass
+        0.38854E-03    0.0000        0.0000     |     0.0000      -0.27711E-22  -0.19183E-04
+         0.0000       0.38854E-03    0.0000     |    0.27711E-22    0.0000      -0.37223E-23
+         0.0000        0.0000       0.38854E-03 |    0.19183E-04   0.37223E-23    0.0000    
+     ------------------------------------------ | ------------------------------------------
+                                                |         Rotational mass (inertia)
+                                                |    0.12721E-05   0.31019E-24  -0.40390E-27
+                                                |    0.15510E-24   0.27801E-08   0.84011E-25
+                                                |   -0.16156E-26   0.25849E-24   0.12721E-05
+
+   TOTAL MASS = 0.38854E-03
+     The mass principal axes coincide with the global Cartesian axes
+
+   CENTER OF MASS (X,Y,Z)=  -0.95803E-20   0.49371E-01  -0.71320E-19
+
+   TOTAL INERTIA ABOUT CENTER OF MASS
+        0.32502E-06   0.12642E-24  -0.40390E-27
+        0.12642E-24   0.27801E-08  -0.12841E-23
+       -0.40390E-27  -0.12841E-23   0.32502E-06
+     The inertia principal axes coincide with the global Cartesian axes
+
+
+  *** MASS SUMMARY BY ELEMENT TYPE ***
+
+  TYPE      MASS
+     1  0.388540E-03
+
+ Range of element maximum matrix coefficients in global coordinates
+ Maximum = 15627998.5 at element 1010.                                   
+ Minimum = 14407027.6 at element 1213.                                   
+
+   *** ELEMENT MATRIX FORMULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1      2020  SOLID186      0.125   0.000062
+ Time at end of element matrix formulation CP = 0.296875.                
+
+  BLOCK LANCZOS CALCULATION OF UP TO     6 EIGENVECTORS.
+  NUMBER OF EQUATIONS              =        42720
+  MAXIMUM WAVEFRONT                =          153
+  MAXIMUM MODES STORED             =            6
+  MINIMUM EIGENVALUE               =  0.00000E+00
+  MAXIMUM EIGENVALUE               =  0.10000E+31
+
+ *** ERROR ***                           CP =       0.344   TIME= 22:07:12
+ Resources file 'D:\ANSYS Inc\v241\CommonFiles\Language\/fx0.msb' not    
+ found.  CADOE_LIBDIR241 = D:\ANSYS Inc\v241\CommonFiles\Language\       
+
+
+ *** ERROR ***                           CP =       0.547   TIME= 22:07:12
+ Resources file 'D:\ANSYS Inc\v241\CommonFiles\Language\/fx0.msb' not    
+ found.  CADOE_LIBDIR241 = D:\ANSYS Inc\v241\CommonFiles\Language\       
+
+ *** ERROR ***                           CP =       0.547   TIME= 22:07:12
+ Resources file 'D:\ANSYS Inc\v241\CommonFiles\Language\/fx0.msb' not    
+ found.  CADOE_LIBDIR241 = D:\ANSYS Inc\v241\CommonFiles\Language\       
+
+ *** ERROR ***                           CP =       0.547   TIME= 22:07:12
+ Resources file 'D:\ANSYS Inc\v241\CommonFiles\Language\/fx0.msb' not    
+ found.  CADOE_LIBDIR241 = D:\ANSYS Inc\v241\CommonFiles\Language\       
+
+  Process memory allocated for solver              =    52.470 MB
+  Process memory required for in-core solution     =    50.000 MB
+  Process memory required for out-of-core solution =    23.734 MB
+
+  Total memory allocated for solver                =   210.149 MB
+  Total memory required for in-core solution       =   200.258 MB
+  Total memory required for out-of-core solution   =    95.835 MB
+
+ *** NOTE ***                            CP =       0.578   TIME= 22:07:12
+ The Distributed Sparse Matrix Solver used by the Block Lanczos          
+ eigensolver is currently running in the in-core memory mode.  This      
+ memory mode uses the most amount of memory in order to avoid using the  
+ hard drive as much as possible, which most often results in the         
+ fastest solution time.  This mode is recommended if enough physical     
+ memory is present to accommodate all of the solver data.                
+
+ *** WARNING ***                         CP =       0.688   TIME= 22:07:12
+ The eigenproblem is ill-conditioned (relative residual from test linear 
+ solve: 2.738162E-03).  The accuracy of the solution may not be          
+ satisfactory.  Modifying the initial value of the frequency shift       
+ (FREQB in the MODOPT command) or changing the boundary conditions of    
+ the model might solve the problem.                                      
+                                                                         
+
+  Process memory required for in-core LANCZOS Workspace             =     42.472755 MB
+  Process memory required for out-of-core LANCZOS Workspace         =     1.482765 MB
+
+  Total   memory required for in-core LANCZOS Workspace             =     166.199615 MB
+  Total   memory required for out-of-core LANCZOS Workspace         =     5.843170 MB
+
+  Lanczos Memory Mode : INCORE
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise                       
+ 20230322  VERSION=WINDOWS x64   22:07:12  APR 07, 2026 CP=      0.750
+
+ wbnew--__ (B5)                                                                
+
+
+ NEGATIVE FREQUENCY OF -0.4093E-01 SET TO ZERO
+ NEGATIVE FREQUENCY OF -0.1391E-01 SET TO ZERO
+ NEGATIVE FREQUENCY OF -0.3751E-02 SET TO ZERO
+
+ *** FREQUENCIES FROM BLOCK LANCZOS ITERATION ***
+
+  MODE    FREQUENCY (HERTZ)      
+
+
+    1     0.000000000000    
+    2     0.000000000000    
+    3     0.000000000000    
+    4    0.7833254175202E-02
+    5    0.1546553774819E-01
+    6    0.3889081933253E-01
+
+
+ NUMBER OF WARNING MESSAGES ENCOUNTERED=          3
+ NUMBER OF ERROR   MESSAGES ENCOUNTERED=          4
+
+
+
+ ***** PROBLEM TERMINATED BY INDICATED ERROR(S) OR BY END OF INPUT DATA *****
+
++--------------------- M A P D L   S T A T I S T I C S ------------------------+
+
+Release: 2024 R1            Build: 24.1       Update: UP20231106   Platform: WINDOWS x64 
+Date Run: 04/07/2026   Time: 22:07     Process ID: 14044
+Operating System: Windows 11  (Build: 26200)
+
+Processor Model: 13th Gen Intel(R) Core(TM) i7-13700H
+
+Compiler: Intel(R) Fortran Compiler Classic Version 2021.9  (Build: 20230302)
+          Intel(R) C/C++ Compiler Classic Version 2021.9  (Build: 20230302)
+          Intel(R) Math Kernel Library Version 2020.0.0 Product Build 20191125
+          BLAS Library supplied by Intel(R) MKL
+
+Number of machines requested            :    1
+Total number of cores available         :   20
+Number of physical cores available      :   14
+Number of processes requested           :    4
+Number of threads per process requested :    1
+Total number of cores requested         :    4 (Distributed Memory Parallel)               
+MPI Type: INTELMPI
+MPI Version: Intel(R) MPI Library 2021.10 for Windows* OS
+
+
+GPU Acceleration: Not Requested
+
+Job Name: file0
+Input File: dummy.dat
+
+  Core                Machine Name   Working Directory
+ -----------------------------------------------------
+     0                     Promile   C:\Users\20230\AppData\Local\Temp\WB_Lihua_2256_2\_ProjectScratch\ScrEEA0
+     1                     Promile   C:\Users\20230\AppData\Local\Temp\WB_Lihua_2256_2\_ProjectScratch\ScrEEA0
+     2                     Promile   C:\Users\20230\AppData\Local\Temp\WB_Lihua_2256_2\_ProjectScratch\ScrEEA0
+     3                     Promile   C:\Users\20230\AppData\Local\Temp\WB_Lihua_2256_2\_ProjectScratch\ScrEEA0
+ 
+Latency time from master to core     1 =    1.344 microseconds
+Latency time from master to core     2 =    1.299 microseconds
+Latency time from master to core     3 =    1.299 microseconds
+ 
+Communication speed from master to core     1 = 12136.84 MB/sec
+Communication speed from master to core     2 = 13798.81 MB/sec
+Communication speed from master to core     3 = 13049.29 MB/sec
+
+Total CPU time for main thread                    :        0.9 seconds
+Total CPU time summed for all threads             :        0.8 seconds
+
+Elapsed time spent obtaining a license            :        0.4 seconds
+Elapsed time spent pre-processing model (/PREP7)  :        0.0 seconds
+Elapsed time spent solution - preprocessing       :        0.0 seconds
+Elapsed time spent computing solution             :        0.5 seconds
+Elapsed time spent solution - postprocessing      :        0.0 seconds
+Elapsed time spent post-processing model (/POST1) :        0.0 seconds
+ 
+Eigensolver used                                  :            Block Lanczos
+Equation solver computational rate                :       90.7 Gflops
+Equation solver effective I/O rate                :       30.8 GB/sec
+
+Sum of disk space used on all processes           :       70.6 MB
+
+Sum of memory used on all processes               :      717.0 MB
+Sum of memory allocated on all processes          :     3246.0 MB
+Physical memory available                         :         16 GB
+Total amount of I/O written to disk               :        0.0 GB
+Total amount of I/O read from disk                :        0.0 GB
+
++------------------ E N D   M A P D L   S T A T I S T I C S -------------------+
+
+
+ *-----------------------------------------------------------------------------*
+ |                                                                             |
+ |                               RUN COMPLETED                                 |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |  Ansys MAPDL 2024 R1         Build 24.1         UP20231106    WINDOWS x64   |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |  Database Requested(-db)     1024 MB     Scratch Memory Requested   1024 MB |
+ |  Max Database Used(Master)      6 MB     Max Scratch Used(Master)    179 MB |
+ |  Max Database Used(Workers)     1 MB     Max Scratch Used(Workers)   177 MB |
+ |  Sum Database Used(All)         9 MB     Sum Scratch Used(All)       708 MB |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |        CP Time      (sec) =          0.781       Time  =  22:07:12          |
+ |        Elapsed Time (sec) =          2.000       Date  =  04/07/2026        |
+ |                                                                             |
+ *-----------------------------------------------------------------------------*
